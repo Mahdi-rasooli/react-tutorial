@@ -1,0 +1,126 @@
+* , *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+/*
+background: linear-gradient(90deg, #2b5876, #4e4376);
+background: linear-gradient(90deg, #141e30, #243b55);
+background: linear-gradient(90deg, #f7797d, #fbd786, #c6ffdd);
+background: linear-gradient(90deg, #f6d365, #fda085);
+background: linear-gradient(90deg, #ff9966, #ff5e62);
+background: linear-gradient(90deg, #1a2980, #26d0ce);
+background: linear-gradient(90deg, #360033, #0b8793);
+background: linear-gradient(90deg, #56ab2f, #a8e063);
+background: linear-gradient(90deg, #2b5876, #4e4376);
+background: linear-gradient(90deg, #00c6ff, #0072ff);
+*/
+
+.container{
+    background: linear-gradient(90deg, #2b5876, #4e4376);
+    width: 100vw;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+.container.dark{
+    background: hsl(0, 0%, 14%);
+    transition: 0.5s;
+}
+
+.navbar{
+    width: 100vw;
+    background: hsl(0, 0%, 100%);
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 7%;
+    transition: 0.5s;
+}
+
+.dark .navbar{
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+}
+
+
+.logo{
+    width: 160px;
+    height: auto;
+}
+
+.nav-items{
+    flex: 1;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-items li{
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-items ul li{
+    text-decoration: none;
+}
+
+.nav-items li:hover{
+    color: hsl(0, 0%, 47%);
+}
+
+.dark .nav-items li:hover{
+    color: hsl(0, 0%, 66%);
+}
+
+.toggle-icon{
+    width: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.search-bar{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: hsl(0, 0%, 14%);
+}
+
+.search-bar input{
+    padding: 6px;
+    background-color: transparent;
+    max-width: 200px;
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+
+.search-bar input::placeholder{
+    color: hsl(0, 0%, 100%);
+}
+
+.search-bar img{
+    width: 20px;
+}
+
+.dark .search-bar{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.dark .search-bar input{
+    color: hsl(0, 0%, 13%);
+}
+
+.dark .search-bar input::placeholder{
+    color: hsl(0, 0%, 14%);
+}
+
